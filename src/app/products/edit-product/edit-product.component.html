@@ -1,0 +1,54 @@
+<div class="container w-50 mt-5 p-3">
+    <h3 class="text-center">add new product</h3>
+    <form (ngSubmit)="updateProduct(updateproductform)" #updateproductform="ngForm" action="">
+        <div class="p-2">
+            <input [(ngModel)]="productdata.id" type="text" class="form-control" type="text" placeholder="id" id="pid" name="pname">
+
+        </div>
+        <div class="p-2">
+            <input [(ngModel)]="productdata.productName" type="text" class="form-control" type="text"  placeholder="productName" id="pname" name="pname">
+
+        </div>
+        <div class="p-2">
+            <input [(ngModel)]="productdata.categoryId"  type="text" class="form-control" type="text"  placeholder="categoryId" id="cid" name="cid">
+
+        </div>
+        <div class="p-2">
+            <input [(ngModel)]="productdata.description"  type="text" class="form-control" type="text"  placeholder="description" id="pdesc" name="pdesc">
+
+        </div>
+        <div class="p-2">
+            <input [(ngModel)]="productdata.price"  type="text" class="form-control" type="text"  placeholder="price" id="price" name="price">
+
+        </div>
+        <div class="p-2">
+            <input [(ngModel)]="productdata.is_available" type="text" class="form-control" type="text"  placeholder="is_available" id="is_available" name="is_available">
+
+        </div>
+        <div class="p-2">
+            <input [(ngModel)]="productdata.productImg" type="text" class="form-control" type="text"  placeholder="productImg" id="pimg" name="pimg">
+
+        </div>
+        <div class="p-2">
+            <input [(ngModel)]="productdata.rating" type="text" class="form-control" type="text"  placeholder="rating" id="rating" name="rating">
+
+        </div>
+        <div class="p-2">
+            <input [(ngModel)]="productdata.review" type="text" class="form-control" type="text"  placeholder="review" id="review" name="review">
+
+        </div>
+        <div class="p-2">
+            <input [(ngModel)]="productdata.vendor_name" type="text" class="form-control" type="text"  placeholder="vendor_name" id="vendor_name" name="vendor_name">
+
+        </div>
+        <div class="p-2">
+            <input [(ngModel)]="productdata.warranty" type="text" class="form-control" type="text"  placeholder="warranty" id="warranty" name="warranty">
+
+        </div>
+        <div class="p-2 text-center">
+            <button type="submit" class="btn btn-outline-dark">Add product</button>
+        </div>
+       
+    </form>
+
+</div>

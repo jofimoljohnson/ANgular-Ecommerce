@@ -1,0 +1,42 @@
+<div class="container w-50 mt-5 p-3">
+    <h3 class="text-center">add new product</h3>
+    <form [formGroup]="addproductform" (ngSubmit)="addproduct()" action="">
+        <div class="p-2">
+            <input formControlName="id" type="text" class="form-control" placeholder="id" id="pid" name="pid">
+        </div>
+        <div class="p-2">
+            <input formControlName="productName" type="text" class="form-control" placeholder="productName" id="pname" name="pname">
+        </div>
+        <div class="p-2">
+            <input formControlName="categoryId" type="text" class="form-control" placeholder="categoryId" id="cid" name="cid">
+        </div>
+        <div class="p-2">
+            <input formControlName="description" type="text" class="form-control" placeholder="description" id="pdesc" name="pdesc">
+        </div>
+        <div class="p-2">
+            <input formControlName="price" type="text" class="form-control" placeholder="price" id="price" name="price">
+        </div>
+        <div class="p-2">
+            <input formControlName="is_available" type="text" class="form-control" placeholder="is_available" id="available" name="available">
+        </div>
+        <div class="p-2">
+            <input formControlName="productImg" type="text" class="form-control" placeholder="productImg" id="pimg" name="pimg">
+        </div>
+        <div class="p-2">
+            <input formControlName="rating" type="text" class="form-control" placeholder="rating" id="rating" name="rating">
+        </div>
+        <div class="p-2">
+            <input formControlName="review" type="text" class="form-control" placeholder="review" id="review" name="review">
+        </div>
+        <div class="p-2">
+            <input formControlName="vendor_name" type="text" class="form-control" placeholder="vendor_name" id="vname" name="vname">
+        </div>
+        <div class="p-2">
+            <input formControlName="warranty" type="text" class="form-control" placeholder="warranty" id="pid" name="warranty">
+        </div>
+        <div class="p-2 text-center">
+            <button type="submit" class="btn btn-outline-dark">Add product</button>
+        </div>
+ </form>
+
+</div>
